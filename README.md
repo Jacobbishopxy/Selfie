@@ -8,7 +8,10 @@ update to CMake 3.28+ and GCC 14+, [ref](https://jacobbishopxy.github.io/docs/20
 
 - [simplified CRTP](./include/crtp.hpp)
 - [perfect forwarding](./include/logger.hpp)
--
+- [eliminate overloads](./include/eliminate_overloads.hpp)
+- [SFINAE friendly](./include/sfinae_friendly.hpp)
+- [unified call syntax](./include/unify_call_syntax.hpp)
+- [recursive lambda](./include/recursive_lambda.hpp)
 
 ## Notes
 
