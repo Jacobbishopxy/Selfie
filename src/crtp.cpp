@@ -20,6 +20,7 @@ void Derived2::impl()
 void doImpl(DerivedFromBase auto&& d)
 {
     std::forward<decltype(d)>(d).foo();
+    std::forward<decltype(d)>(d).bar();
 }
 
 int main(int argc, char** argv)

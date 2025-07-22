@@ -14,7 +14,14 @@ struct Base
     template <typename Self>
     void foo(this Self&& self)
     {
-        std::cout << "Base calling derived..." << std::endl;
+        std::cout << "Base.foo calling derived..." << std::endl;
+        self.impl();
+    }
+
+    // alternative
+    void bar(this auto&& self)
+    {
+        std::cout << "Base.bar calling derived..." << std::endl;
         self.impl();
     }
 };
